@@ -1,0 +1,1 @@
+from routes.v1.class_cruds._models import ListClass
