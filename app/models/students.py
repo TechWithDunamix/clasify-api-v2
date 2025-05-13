@@ -13,3 +13,14 @@ class Students(BaseModel):
     @property
     def date_joined(self):
         return self.created_at
+    
+
+    async def to_dict(self):
+        return {
+            'id': self.id,
+            'date_joined': self.date_joined,
+            'is_approved': self.is_approved,
+            'is_ban': self.is_ban,
+            'membership_code': self.membership_code,
+            **self.data
+        }

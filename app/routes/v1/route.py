@@ -5,6 +5,7 @@ from .class_cruds.route import owner_classroom_routers
 from .public_class.route import public_classroom_routers
 from .class_setting.route import owner_classroom_setting_routers
 from .membership.route import membership_router
+from .students_managemts.route import admin_student_router
 v1 = Router(prefix="/api/v1", tags = ["V1"])
 
 
@@ -21,3 +22,4 @@ v1.mount_router(owner_classroom_routers)
 v1.mount_router(public_classroom_routers)
 v1.mount_router(owner_classroom_setting_routers)
 v1.mount_router(membership_router)
+v1.mount_router(admin_student_router)
