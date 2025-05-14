@@ -20,3 +20,5 @@ admin_student_router = Router(prefix="/owner/student", tags=["Owner:Student"])
 async def list_student(request: Request, response: Response, class_id: str):
     classroom = await Students.filter(to_class_id=class_id).all()
     return [await x.to_dict() for x in classroom]
+
+
