@@ -7,7 +7,7 @@ This repo contains the backend API for the Classify platform, serving endpoints 
 ---
 
 
-- ⚡ **Blazing fast API** with Nexios
+- ⚡ **Blazing fast API** with Nexios 😎
 
 
 ---
